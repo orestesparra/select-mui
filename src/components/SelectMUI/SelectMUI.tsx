@@ -383,7 +383,7 @@ const CustomSelect = ({
         hasNextPage={vHasNextPage as any}
         isNextPageLoading={vIsNextPageLoading}
         LoadingComponent={VLoadingComponent}
-        filterOption={virtualize ? undefined : () => true}
+        filterOption={virtualize ? undefined : undefined} //https://react-select.com/advanced
         itemSize={() => vWidthOfRows || 45}
         totalOfVisiblesRows={vTotalOfVisiblesRows}
         loadNextPage={(startIndex: number, stopIndex: number) =>
